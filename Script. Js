@@ -1,0 +1,15 @@
+// This function changes the text content of an HTML element
+function changeText() {
+  const element = document.getElementById("myParagraph");
+  if (element) {
+    element.textContent = "The text has been changed by JavaScript!";
+  }
+}
+
+// This function adds an event listener to a button
+document.addEventListener("DOMContentLoaded", () => {
+  const myButton = document.getElementById("myButton");
+  if (myButton) {
+    myButton.addEventListener("click", changeText);
+  }
+});
